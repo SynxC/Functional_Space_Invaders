@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <style>
+            @import url(style.css);
+            p.highlight {
+                color: red;
+            }
+            svg {
+                background-color: rgb(41, 41, 36);
+            }
+            .bullet {
+                fill: red;
+            }
+            .gameover {
+                font-family: sans-serif;
+                font-size:80px;
+                fill:red;
+            }
+            .restart {
+                font-family: sans-serif;
+                font-size:40px;
+                fill:red;
+            }
+            .invader {
+                fill: burlywood;
+            }
+            .boss {
+                fill: whitesmoke;
+            }
+            .ship {
+                fill: lightblue;
+            }
+            .shield {
+                fill: none;
+                stroke-width:3px;
+                stroke: green;
+            }
+            .score {
+                font-family: sans-serif;
+                font-size:30px;
+                fill: white;
+            }
+            .key {
+                width:18px;
+                text-align:center;
+                border-radius:30px;
+                background-color:lightgray;
+            }
+        </style>
+        <script src="./dist/spaceinvaders.js"></script>
+    </head>
+    <body>
+        <h1>Space Invaders by Jun Hoe San</h1>
+        <div style="display: flex">
+            <svg id="canvas" width="600" height="600">
+                <g id='ship' transform='translate(300, 570)'>
+                    <polygon class='ship' points='-15,20 15,20 0,-20'></polygon>
+                    </polygon>
+                </g>
+                <g>
+                    <text id= 'score' x='210' y='31' class='score'> 0 </text>
+                </g>
+                <g>
+                    <text id= 'currentScore' x='10' y='30' class='score'> Current Score: </text>
+                </g>
+            </svg>
+        <div style="margin-left: 300px;">
+            <h2> Space Invader Gameplay Instructions</h2>
+            <p> Welcome to Space invaders! Please Refer to the controls on the keys required to interact with the game below.</p>
+            <h3> Gameplay </h3>
+            <p> 1. Kill all the invaders.</p>
+            <p> 2. Avoid Bullets of invaders.</p>
+            <p> 3. Get hit and you're dead.</p>
+            <p> 4. Shields do not replenish. So only sacrifice if needed. </p>
+            <p> 5. Have fun!</p>
+        </div>
+    </div>
+        <div id="controls">
+            <h1>Controls:</h1>
+            <table>
+                <tr><td>Move Left</td><td><div id="ArrowLeft" class="key">&#8678;</div></td></tr>
+                <tr><td>Move Right</td><td><div id="ArrowRight" class="key">&#8680;</div></td></tr>
+                <tr><td>Shoot</td><td><div id="Space" class="key" style="width:80px">Spacebar</div></td></tr>
+            </table>
+        </div>
+    </body>
+</html>
