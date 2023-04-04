@@ -47,14 +47,8 @@ const
 const randomInt = (lower: number, upper: number) : number => Math.floor(Math.random() * (upper - lower + 1) + lower);
 
 function spaceinvaders() {
-    // Inside this function you will use the classes and functions
-    // from rx.js
-    // to add visuals to the svg element in pong.html, animate them, and make them interactive.
-    // Study and complete the tasks in observable exampels first to get ideas.
-    // Course Notes showing Asteroids in FRP: https://tgdwyer.github.io/asteroids/
-    // You will be marked on your functional programming style
-    // as well as the functionality that you implement.
-    // Document your code!
+    // Inside this function you will use the classes and functions from rx.js to
+    // add visuals to the svg element in pong.html, animate them, and make them interactive.
 
   // ViewType to represent different view objects within the HTML
   type viewType = 'bullet'|'invader'|'ship'|'shield'|'boss'
